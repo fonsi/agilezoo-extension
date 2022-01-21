@@ -1,0 +1,17 @@
+{
+  "name": "PandaPlani",
+  "description": "The panda helps you to plan your sprint!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.atlassian.net/jira/*"],
+      "js": ["scripts/pandaplani/contentScript/index.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
