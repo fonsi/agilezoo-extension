@@ -1,0 +1,4 @@
+const PREFIX = '@SPRINT';
+
+export const SET_CURRENT_SPRINT = `${PREFIX}/SET_CURRENT_SPRINT`;
+export const ADD_SPRINTS = `${PREFIX}/ADD_SPRINTS`;

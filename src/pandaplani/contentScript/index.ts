@@ -1,5 +1,9 @@
-const init = () => {
-    console.log('PandaPlani content script!');
+import { processSprintsOnLoaded } from './sprint/processSprintsOnLoaded';
+import { initPlaniInfo } from './planiInfo/initPlaniInfo';
+
+const initialize = async (container: HTMLElement): Promise<void> => {
+    await processSprintsOnLoaded(container);
+    initPlaniInfo(container);
 }
 
-init();
+initialize(document.body);

@@ -1,7 +1,7 @@
 const init = () => {
-    chrome.runtime.onInstalled.addListener(() => {
-        console.log('PandaPlani background!');
-    });
+    // chrome.runtime.onInstalled.addListener(() => {
+    //     console.log('PandaPlani background!');
+    // });
 }
 
 init();

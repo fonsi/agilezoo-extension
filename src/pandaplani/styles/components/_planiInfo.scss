@@ -1,0 +1,146 @@
+.plani-info-container {
+    position: absolute;
+    bottom: 10px;
+    left: -28px;
+    overflow: hidden;
+    z-index: 99;
+    width: 60px;
+    height: 60px;
+
+    &.is-opened {
+        width: 100%;
+        height: 100%;
+        max-width: 1000px;
+        max-height: 800px;
+        border: 1px solid #ddd;
+        border-radius: 4px 4px 4px 30px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    }
+
+    .plani-info-toggle {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+.plani-info-card-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .plani-info-card {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.no-current-sprint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.plani-info-card-content {
+    width: 100%;
+    height: 100%;
+}
+
+.plani-info-stories-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plani-info-story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4px;
+    border: 1px solid #ddd;
+    background-color: #efefef;
+    color: #333;
+    font-size: 13px;
+}
+
+.plani-info-story-points-container {
+    display: flex;
+    width: 30px;
+}
+
+.plani-info-story-points {
+    border-radius: 2px;
+    background-color: #ddd;
+    font-size: 12px;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    line-height: 130%;
+}
+
+.plani-info-config {
+    margin-top: 20px;
+}
+
+.plani-info-config-detail {
+    display: flex;
+    align-items: baseline;
+}
+
+.plani-info-config-summary {
+    font-size: 24px;
+}
+
+.plani-info-config-hint {
+    color: #aaa;
+    margin-left: 5px;
+}
+
+.plani-info-config-edit-btn {
+    align-self: center;
+    color: #aaa;
+    margin-left: 5px;
+}
+
+.plani-info-status {
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+.plani-info-status-component {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    padding: 16px 8px;
+    max-height: 300px;
+    overflow: hidden;
+
+    .plani-info-stories-list {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        margin-top: 12px;
+    }
+}
+
+.plani-info-status-component-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 8px;
+}
+
+.plani-info-status-component-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.plani-info-status-component-subtitle {
+    font-style: italic;
+    margin-top: 5px;
+}
