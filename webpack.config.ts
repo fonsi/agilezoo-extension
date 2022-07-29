@@ -1,3 +1,4 @@
+import path from 'path';
 import * as webpack from 'webpack';
 import CopyPlugin = require('copy-webpack-plugin');
 import MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -6,15 +7,15 @@ const config: webpack.Configuration = {
     mode: 'production',
     entry: {
         background: {
-            import: './src/background/index.ts',
+            import: path.resolve(__dirname, './src/background/index.ts'),
             filename: 'background.js',
         },
         pandaPlaniContentScript: {
-            import: './src/pandaPlani/contentScript/index.ts',
+            import: path.resolve(__dirname, './src/pandaPlani/contentScript/index.ts'),
             filename: 'scripts/pandaPlani/contentScript/index.js',
         },
         pandaPlaniStyles: {
-            import: './src/pandaPlani/styles/index.scss',
+            import: path.resolve(__dirname, './src/pandaPlani/styles/index.scss'),
         }
     },
     module: {
